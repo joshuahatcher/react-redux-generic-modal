@@ -7,13 +7,6 @@ import * as actionCreators from './actions/actionCreators'
 // Components
 import ModalRoot from './ModalComponents';
 
-console.log('old state', store.getState())
-
-const props = {
-  hey: 'hola',
-  how: 'como estas'
-};
-
 function openModal(modalType, modalProps) {
   store.dispatch(actionCreators.showModal(modalType, modalProps));
 }
