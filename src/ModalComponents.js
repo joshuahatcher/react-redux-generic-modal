@@ -1,16 +1,25 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-const ReactivateModal = () => {
-  return <p>I am the reactivate modal.</p>
-};
+const ReactivateModal = (props) => (
+  <div>
+    <h1>I am the reactivate modal.</h1>
+    <p>{props.message}</p>
+  </div>
+);
 
-const DeactivateModal = () => {
-  return <p>I am the deactivate modal.</p>  
-};
-const HappyModal = () => {
-  return <p>I am the happy modal.</p>
-};
+const DeactivateModal = (props) => (
+  <div>
+    <h1>I am the deactivate modal.</h1>
+    <p>{props.message}</p>
+  </div>
+);
+const HappyModal = (props) => (
+  <div>
+    <h1>I am the happy modal.</h1>
+    <p>{props.message}</p>
+  </div>
+);
 
 const MODAL_COMPONENTS = {
   REACTIVATE: ReactivateModal,

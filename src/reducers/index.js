@@ -19,6 +19,6 @@ function modal(state = initialState, action) {
   }
 }
 
-const rootReducer = combineReducers({ modal });
+const rootReducer = combineReducers({ modal }); // If we ever happen to add any more reducers...
 
 export default rootReducer;
